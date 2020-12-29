@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Display from './Components/Display';
 import NumPad from './Components/NumPad';
 
@@ -134,7 +134,7 @@ function App() {
     }
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     //Handle equals side effect
     if (clickedBtn === '=') {
       //if the last char is a sign during calculation, remove it
