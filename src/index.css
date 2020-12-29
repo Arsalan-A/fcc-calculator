@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -31,6 +32,9 @@
 }
 
 input {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   border: none;
   text-align: right;
 }
@@ -38,6 +42,8 @@ input {
 .numpad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  font-family: 'Roboto', sans-serif;
+
   gap: 0.1rem;
   width: 98%;
   height: 77%;
@@ -45,6 +51,8 @@ input {
 }
 
 .btn {
+  font-family: 'Roboto', sans-serif;
+
   font-size: 1.5rem;
 }
 

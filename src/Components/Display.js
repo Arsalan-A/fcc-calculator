@@ -9,8 +9,10 @@ function Display({ value, results, finalValue }) {
         value={finalValue.length > 0 ? finalValue : results}
         disabled
       />
+      {console.log(value)}
       <input id='display' type='text' value={value} disabled />
     </div>
+    // <div id='display'>{value}</div>
   );
 }
 
